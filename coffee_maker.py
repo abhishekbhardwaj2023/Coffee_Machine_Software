@@ -1,5 +1,5 @@
 class CoffeeMaker:
-    """Models the machine that makes the coffee"""
+    """Models the machine that makes the coffee"""  # Coffee Recipe
     def __init__(self):
         self.resources = {
             "water": 300,
