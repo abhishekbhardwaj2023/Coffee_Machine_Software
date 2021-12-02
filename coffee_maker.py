@@ -1,5 +1,6 @@
 class CoffeeMaker:
-    """Models the machine that makes the coffee"""  # Coffee Recipe
+    """Models the machine that makes the coffee"""  
+    # Coffee Recipe
     def __init__(self):
         self.resources = {
             "water": 300,
@@ -23,7 +24,8 @@ class CoffeeMaker:
         return can_make
 
     def make_coffee(self, order):
-        """Deducts the required ingredients from the resources."""
+        #Deducts the required ingredients from the resources.
         for item in order.ingredients:
             self.resources[item] -= order.ingredients[item]
         print(f"Here is your {order.name} ☕️. Enjoy!")
+        
